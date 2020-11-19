@@ -4,5 +4,10 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\NicolasPlaisant.CalculaJuros.Crosscutting\NicolasPlaisant.CalculaJuros.Crosscutting.csproj" />
+    <ProjectReference Include="..\NicolasPlaisant.CalculaJuros.Domain.Core\NicolasPlaisant.CalculaJuros.Domain.Core.csproj" />
+  </ItemGroup>
+
 
 </Project>
