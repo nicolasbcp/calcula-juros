@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using NicolasPlaisant.CalculaJuros.Crosscutting;
 
 namespace NicolasPlaisant.CalculaJuros.Calculadora.API
 {
@@ -25,6 +26,8 @@ namespace NicolasPlaisant.CalculaJuros.Calculadora.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            IoC.ApplyServices(services);
+            IoC.Configure(services, Configuration);
             services.AddControllers();
         }
 

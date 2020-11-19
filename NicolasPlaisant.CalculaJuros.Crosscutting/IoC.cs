@@ -18,6 +18,7 @@ namespace NicolasPlaisant.CalculaJuros.Crosscutting
         {
             #region Services
             services.AddTransient<IComumService, ComumService>();
+            services.AddTransient<ICalculadoraService, CalculadoraService>();
             #endregion
         }
     }

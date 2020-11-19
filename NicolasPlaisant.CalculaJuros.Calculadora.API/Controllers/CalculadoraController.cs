@@ -1,47 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+﻿using Microsoft.AspNetCore.Mvc;
+using NicolasPlaisant.CalculaJuros.Domain.Core.Services.Interfaces;
+using NicolasPlaisant.CalculaJuros.Shared.Models;
 
 namespace NicolasPlaisant.CalculaJuros.Calculadora.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/calcula-juros/v1")]
     [ApiController]
     public class CalculadoraController : ControllerBase
     {
-        // GET: api/<CalculadoraController>
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
+        private readonly ICalculadoraService _service;
 
-        // GET api/<CalculadoraController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
+        public CalculadoraController(ICalculadoraService service) => _service = service;
 
-        // POST api/<CalculadoraController>
+        /// <summary>
+        /// Recebe um objeto que contém valor inicial e tempo como parâmetro
+        /// Chama a service de cálculo e retorna o valor
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
         [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/<CalculadoraController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<CalculadoraController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        [Route("calculadora")]
+        public string Post([FromBody] CalculadoraRequestDTO request)
+            => _service.CalculaJuros(request);
     }
 }

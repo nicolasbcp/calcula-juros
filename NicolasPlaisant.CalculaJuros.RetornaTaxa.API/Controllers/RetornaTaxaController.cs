@@ -13,7 +13,7 @@ namespace NicolasPlaisant.CalculaJuros.RetornaTaxa.API.Controllers
 
         [HttpGet]
         [Route("taxaJuros")]
-        public double RecuperaTaxaJuros(double juros = 0.01)
+        public double RecuperaTaxaJuros()
             => _service.TaxaJuros();
     }
 }
