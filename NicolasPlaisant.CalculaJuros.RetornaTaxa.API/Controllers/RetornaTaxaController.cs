@@ -7,6 +7,8 @@ namespace NicolasPlaisant.CalculaJuros.RetornaTaxa.API.Controllers
     [ApiController]
     public class RetornaTaxaController : ControllerBase
     {
+        // Apesar de não utilizada, deixei a implementação caso trabalhasse com outras taxas
+        // ou maneiras de cálculo
         private readonly IComumService _service;
 
         public RetornaTaxaController(IComumService service) => _service = service;
@@ -14,6 +16,6 @@ namespace NicolasPlaisant.CalculaJuros.RetornaTaxa.API.Controllers
         [HttpGet]
         [Route("taxaJuros")]
         public double RecuperaTaxaJuros()
-            => _service.TaxaJuros();
+            => 0.01;
     }
 }

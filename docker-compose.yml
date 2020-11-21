@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  nicolasplaisant.calculajuros.retornataxa.api:
+    image: ${DOCKER_REGISTRY-}nicolasplaisantcalculajurosretornataxaapi
+    build:
+      context: .
+      dockerfile: NicolasPlaisant.CalculaJuros.RetornaTaxa.API/Dockerfile
+
+  nicolasplaisant.calculajuros.calculadora.api:
+    image: ${DOCKER_REGISTRY-}nicolasplaisantcalculajuroscalculadoraapi
+    environment:
+      - RetornaTaxaApi=https://localhost:32802/api/calcula-juros/v1/taxaJuros
+    build:
+      context: .
+      dockerfile: NicolasPlaisant.CalculaJuros.Calculadora.API/Dockerfile
+

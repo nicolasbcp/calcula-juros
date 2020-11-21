@@ -28,6 +28,7 @@ namespace NicolasPlaisant.CalculaJuros.Calculadora.API
         {
             IoC.ApplyServices(services);
             IoC.Configure(services, Configuration);
+
             services.AddControllers();
         }
 

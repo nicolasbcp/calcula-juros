@@ -20,7 +20,12 @@ namespace NicolasPlaisant.CalculaJuros.Calculadora.API.Controllers
         /// <returns></returns>
         [HttpPost]
         [Route("calculadora")]
-        public string Post([FromBody] CalculadoraRequestDTO request)
-            => _service.CalculaJuros(request);
+        public string Post([FromBody] CalculadoraRequestDTO request, string baseUrl)
+            => _service.CalculaJuros(request, baseUrl);
+
+        [HttpGet]
+        [Route("showmethecode")]
+        public string ShowMeTheCode()
+            => "https://github.com/nicolasbcp/calcula-juros";
     }
 }

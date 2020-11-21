@@ -2,7 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+    <UserSecretsId>21e6e439-3cf0-464e-bd27-a5cfb3e87cac</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\NicolasPlaisant.CalculaJuros.Crosscutting\NicolasPlaisant.CalculaJuros.Crosscutting.csproj" />
