@@ -23,28 +23,38 @@ namespace NicolasPlaisant.CalculaJuros.Domain.Core.Services
         /// <param name="request"></param>
         /// <param name="baseUrl"></param>
         /// <returns></returns>
-        public string CalculaJuros(CalculadoraRequestDTO request, string baseUrl)
+        public string CalculaJuros(CalculadoraRequestDTO request)
         {
-            // Consumo da API
-            baseUrl = Environment.GetEnvironmentVariable("RetornaTaxaApi");
+            try
+            {
+                string baseUrl = Environment.GetEnvironmentVariable("RetornaTaxaApi");
 
-            var client = new RestClient(baseUrl);
-            var response = client.Execute(new RestRequest());
+                if (string.IsNullOrEmpty(baseUrl))
+                    baseUrl = "https://localhost:44326/api/calcula-juros/v1/taxaJuros";
 
-            // Uma vez que o valor dos juros é fixado, não há problema em trabalhar com a divisão abaixo
-            double valorJuros = Convert.ToDouble(response.Content) / 100;
+                ValidacoesIniciais(request);
 
-            var primeiraParte = 1 + valorJuros;
+                var client = new RestClient(baseUrl);
+                var response = client.Execute(new RestRequest());
 
-            // Uso da biblioteca Math para trabalhar com potência
-            var segundaParte = Math.Pow(primeiraParte, request.Tempo);
+                // Uma vez que o valor dos juros é fixado, não há problema em trabalhar com a divisão abaixo
+                double valorJuros = Convert.ToDouble(response.Content) / 100;
 
-            decimal valorFinal = request.ValorInicial * Convert.ToDecimal(segundaParte);
+                var primeiraParte = 1 + valorJuros;
 
-            // Formatação do retorno com duas casas decimais
-            return string.Format("{0:0.00}", valorFinal);
+                // Uso da biblioteca Math para trabalhar com potência
+                var segundaParte = Math.Pow(primeiraParte, request.Tempo);
+
+                decimal valorFinal = request.ValorInicial * Convert.ToDecimal(segundaParte);
+
+                // Formatação do retorno com duas casas decimais
+                return string.Format("{0:0.00}", valorFinal);
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Ocorreu um erro inesperado, seguem informações:\n", e);
+            }
         }
-
 
         /// <summary>
         /// OPÇÃO NÃO UTILIZADA
@@ -65,11 +75,8 @@ namespace NicolasPlaisant.CalculaJuros.Domain.Core.Services
             return string.Format("{0:0.00}", valorFinal);
         }
 
-        private void ValidacoesIniciais(CalculadoraRequestDTO request, string baseUrl)
+        public void ValidacoesIniciais(CalculadoraRequestDTO request)
         {
-            if (string.IsNullOrEmpty(baseUrl))
-                throw new Exception("Houve um erro no processamento do Endpoint, favor verificar o valor passado.");
-
             if (request == null)
                 throw new Exception("O corpo da requisição é de preenchimento obrigatório.");
 

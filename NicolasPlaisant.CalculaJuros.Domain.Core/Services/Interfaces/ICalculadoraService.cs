@@ -4,7 +4,8 @@ namespace NicolasPlaisant.CalculaJuros.Domain.Core.Services.Interfaces
 {
     public interface ICalculadoraService
     {
-        string CalculaJuros(CalculadoraRequestDTO request, string baseUrl);
+        string CalculaJuros(CalculadoraRequestDTO request);
         string CalculaJurosViaService(CalculadoraRequestDTO request);
+        void ValidacoesIniciais(CalculadoraRequestDTO request);
     }
 }
