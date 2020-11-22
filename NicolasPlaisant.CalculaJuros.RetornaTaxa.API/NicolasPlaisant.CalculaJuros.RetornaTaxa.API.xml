@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NicolasPlaisant.CalculaJuros.RetornaTaxa.API</name>
+    </assembly>
+    <members>
+        <member name="M:NicolasPlaisant.CalculaJuros.RetornaTaxa.API.Controllers.RetornaTaxaController.RecuperaTaxaJuros">
+            <summary>
+            Busca taxa de juros fixada
+            </summary>
+            <returns>Retorna taxa de juros fixada</returns>
+            <response code="200">Retorna taxa de juros fixada</response>
+        </member>
+    </members>
+</doc>

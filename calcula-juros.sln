@@ -11,19 +11,29 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infrasctructure", "3 - 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Shared", "4 - Shared", "{9383BF02-A743-42CA-AB7D-F348F0E62DB9}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Tests", "5 - Tests", "{547ED6A5-4B70-481E-9C1A-1E673AFC0F78}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{547ED6A5-4B70-481E-9C1A-1E673AFC0F78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NicolasPlaisant.CalculaJuros.Testes", "NicolasPlaisant.CalculaJuros.Testes\NicolasPlaisant.CalculaJuros.Testes.csproj", "{A05CD89C-3F57-49FA-A39D-F244F4B182BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NicolasPlaisant.CalculaJuros.Testes", "NicolasPlaisant.CalculaJuros.Testes\NicolasPlaisant.CalculaJuros.Testes.csproj", "{A05CD89C-3F57-49FA-A39D-F244F4B182BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NicolasPlaisant.CalculaJuros.Shared", "NicolasPlaisant.CalculaJuros.Shared\NicolasPlaisant.CalculaJuros.Shared.csproj", "{0FE47FD8-DB46-4990-A55E-F6D7DCC35114}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NicolasPlaisant.CalculaJuros.Shared", "NicolasPlaisant.CalculaJuros.Shared\NicolasPlaisant.CalculaJuros.Shared.csproj", "{0FE47FD8-DB46-4990-A55E-F6D7DCC35114}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NicolasPlaisant.CalculaJuros.Crosscutting", "NicolasPlaisant.CalculaJuros.Crosscutting\NicolasPlaisant.CalculaJuros.Crosscutting.csproj", "{09094674-1D5B-4902-AC79-DB4654CF9806}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NicolasPlaisant.CalculaJuros.Crosscutting", "NicolasPlaisant.CalculaJuros.Crosscutting\NicolasPlaisant.CalculaJuros.Crosscutting.csproj", "{09094674-1D5B-4902-AC79-DB4654CF9806}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NicolasPlaisant.CalculaJuros.Domain.Core", "NicolasPlaisant.CalculaJuros.Domain.Core\NicolasPlaisant.CalculaJuros.Domain.Core.csproj", "{F3F66771-09A5-429F-B400-B6A21B79B96E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NicolasPlaisant.CalculaJuros.Domain.Core", "NicolasPlaisant.CalculaJuros.Domain.Core\NicolasPlaisant.CalculaJuros.Domain.Core.csproj", "{F3F66771-09A5-429F-B400-B6A21B79B96E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NicolasPlaisant.CalculaJuros.RetornaTaxa.API", "NicolasPlaisant.CalculaJuros.RetornaTaxa.API\NicolasPlaisant.CalculaJuros.RetornaTaxa.API.csproj", "{09708D11-E308-49E7-A6CC-77279689AEA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NicolasPlaisant.CalculaJuros.RetornaTaxa.API", "NicolasPlaisant.CalculaJuros.RetornaTaxa.API\NicolasPlaisant.CalculaJuros.RetornaTaxa.API.csproj", "{09708D11-E308-49E7-A6CC-77279689AEA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NicolasPlaisant.CalculaJuros.Calculadora.API", "NicolasPlaisant.CalculaJuros.Calculadora.API\NicolasPlaisant.CalculaJuros.Calculadora.API.csproj", "{B21745BB-3EC0-457E-BC4F-48F42B70A260}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NicolasPlaisant.CalculaJuros.Calculadora.API", "NicolasPlaisant.CalculaJuros.Calculadora.API\NicolasPlaisant.CalculaJuros.Calculadora.API.csproj", "{B21745BB-3EC0-457E-BC4F-48F42B70A260}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B1A60B92-F2D8-4398-BBE3-D21244085AE2}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "unit", "unit", "{AF1B85BA-F581-46A9-9871-B4487BDA6127}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{C3139D62-4D15-4FF4-9D31-F6E6DC4C8F68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -107,17 +117,34 @@ Global
 		{B21745BB-3EC0-457E-BC4F-48F42B70A260}.Release|x64.Build.0 = Release|Any CPU
 		{B21745BB-3EC0-457E-BC4F-48F42B70A260}.Release|x86.ActiveCfg = Release|Any CPU
 		{B21745BB-3EC0-457E-BC4F-48F42B70A260}.Release|x86.Build.0 = Release|Any CPU
+		{C3139D62-4D15-4FF4-9D31-F6E6DC4C8F68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3139D62-4D15-4FF4-9D31-F6E6DC4C8F68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3139D62-4D15-4FF4-9D31-F6E6DC4C8F68}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C3139D62-4D15-4FF4-9D31-F6E6DC4C8F68}.Debug|x64.Build.0 = Debug|Any CPU
+		{C3139D62-4D15-4FF4-9D31-F6E6DC4C8F68}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C3139D62-4D15-4FF4-9D31-F6E6DC4C8F68}.Debug|x86.Build.0 = Debug|Any CPU
+		{C3139D62-4D15-4FF4-9D31-F6E6DC4C8F68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3139D62-4D15-4FF4-9D31-F6E6DC4C8F68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3139D62-4D15-4FF4-9D31-F6E6DC4C8F68}.Release|x64.ActiveCfg = Release|Any CPU
+		{C3139D62-4D15-4FF4-9D31-F6E6DC4C8F68}.Release|x64.Build.0 = Release|Any CPU
+		{C3139D62-4D15-4FF4-9D31-F6E6DC4C8F68}.Release|x86.ActiveCfg = Release|Any CPU
+		{C3139D62-4D15-4FF4-9D31-F6E6DC4C8F68}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{A05CD89C-3F57-49FA-A39D-F244F4B182BF} = {547ED6A5-4B70-481E-9C1A-1E673AFC0F78}
+		{CB85C68B-6C7B-4190-81B5-1709AA85F38C} = {B1A60B92-F2D8-4398-BBE3-D21244085AE2}
+		{56B3C139-6690-4530-B3B9-0BE75417EB1E} = {B1A60B92-F2D8-4398-BBE3-D21244085AE2}
+		{85117E54-7100-4585-9B85-76E76D978EC2} = {B1A60B92-F2D8-4398-BBE3-D21244085AE2}
+		{9383BF02-A743-42CA-AB7D-F348F0E62DB9} = {B1A60B92-F2D8-4398-BBE3-D21244085AE2}
+		{A05CD89C-3F57-49FA-A39D-F244F4B182BF} = {AF1B85BA-F581-46A9-9871-B4487BDA6127}
 		{0FE47FD8-DB46-4990-A55E-F6D7DCC35114} = {9383BF02-A743-42CA-AB7D-F348F0E62DB9}
 		{09094674-1D5B-4902-AC79-DB4654CF9806} = {85117E54-7100-4585-9B85-76E76D978EC2}
 		{F3F66771-09A5-429F-B400-B6A21B79B96E} = {56B3C139-6690-4530-B3B9-0BE75417EB1E}
 		{09708D11-E308-49E7-A6CC-77279689AEA2} = {CB85C68B-6C7B-4190-81B5-1709AA85F38C}
 		{B21745BB-3EC0-457E-BC4F-48F42B70A260} = {CB85C68B-6C7B-4190-81B5-1709AA85F38C}
+		{AF1B85BA-F581-46A9-9871-B4487BDA6127} = {547ED6A5-4B70-481E-9C1A-1E673AFC0F78}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {00182CB1-0762-4A1B-AD34-BDDD6B64B23B}
