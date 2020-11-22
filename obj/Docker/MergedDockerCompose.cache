@@ -1,0 +1,30 @@
+services:
+  nicolasplaisant.calculajuros.calculadora.api:
+    build:
+      context: C:\Users\nsbt\dev\calcula-juros
+      dockerfile: NicolasPlaisant.CalculaJuros.Calculadora.API/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      RetornaTaxaApi: https://localhost:32802/api/calcula-juros/v1/taxaJuros
+    image: nicolasplaisantcalculajuroscalculadoraapi
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\nsbt\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+  nicolasplaisant.calculajuros.retornataxa.api:
+    build:
+      context: C:\Users\nsbt\dev\calcula-juros
+      dockerfile: NicolasPlaisant.CalculaJuros.RetornaTaxa.API/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: nicolasplaisantcalculajurosretornataxaapi
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\nsbt\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\nsbt\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'

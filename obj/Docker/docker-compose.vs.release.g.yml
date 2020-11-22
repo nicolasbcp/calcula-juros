@@ -1,0 +1,41 @@
+version: '3.4'
+
+services:
+  nicolasplaisant.calculajuros.calculadora.api:
+    container_name: NicolasPlaisant.CalculaJuros.Calculadora.API
+    build:
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "NicolasPlaisant.CalculaJuros.Calculadora.API"
+    volumes:
+      - C:\Users\nsbt\vsdbg\vs2017u5:/remote_debugger:rw
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages  \"/app/NicolasPlaisant.CalculaJuros.Calculadora.API.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+      com.microsoft.visual-studio.project-name: "NicolasPlaisant.CalculaJuros.Calculadora.API"
+    tty: true
+  nicolasplaisant.calculajuros.retornataxa.api:
+    container_name: NicolasPlaisant.CalculaJuros.RetornaTaxa.API
+    build:
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "NicolasPlaisant.CalculaJuros.RetornaTaxa.API"
+    volumes:
+      - C:\Users\nsbt\vsdbg\vs2017u5:/remote_debugger:rw
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages  \"/app/NicolasPlaisant.CalculaJuros.RetornaTaxa.API.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+      com.microsoft.visual-studio.project-name: "NicolasPlaisant.CalculaJuros.RetornaTaxa.API"
+    tty: true

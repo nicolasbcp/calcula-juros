@@ -1,0 +1,12 @@
+C:\Users\nsbt\dev\calcula-juros\NicolasPlaisant.CalculaJuros.Domain.Core\bin\Release\netcoreapp3.1\NicolasPlaisant.CalculaJuros.Domain.Core.deps.json
+C:\Users\nsbt\dev\calcula-juros\NicolasPlaisant.CalculaJuros.Domain.Core\bin\Release\netcoreapp3.1\NicolasPlaisant.CalculaJuros.Domain.Core.dll
+C:\Users\nsbt\dev\calcula-juros\NicolasPlaisant.CalculaJuros.Domain.Core\bin\Release\netcoreapp3.1\NicolasPlaisant.CalculaJuros.Domain.Core.pdb
+C:\Users\nsbt\dev\calcula-juros\NicolasPlaisant.CalculaJuros.Domain.Core\bin\Release\netcoreapp3.1\NicolasPlaisant.CalculaJuros.Shared.dll
+C:\Users\nsbt\dev\calcula-juros\NicolasPlaisant.CalculaJuros.Domain.Core\bin\Release\netcoreapp3.1\NicolasPlaisant.CalculaJuros.Shared.pdb
+C:\Users\nsbt\dev\calcula-juros\NicolasPlaisant.CalculaJuros.Domain.Core\obj\Release\netcoreapp3.1\NicolasPlaisant.CalculaJuros.Domain.Core.csprojAssemblyReference.cache
+C:\Users\nsbt\dev\calcula-juros\NicolasPlaisant.CalculaJuros.Domain.Core\obj\Release\netcoreapp3.1\NicolasPlaisant.CalculaJuros.Domain.Core.AssemblyInfoInputs.cache
+C:\Users\nsbt\dev\calcula-juros\NicolasPlaisant.CalculaJuros.Domain.Core\obj\Release\netcoreapp3.1\NicolasPlaisant.CalculaJuros.Domain.Core.AssemblyInfo.cs
+C:\Users\nsbt\dev\calcula-juros\NicolasPlaisant.CalculaJuros.Domain.Core\obj\Release\netcoreapp3.1\NicolasPlaisant.CalculaJuros.Domain.Core.csproj.CoreCompileInputs.cache
+C:\Users\nsbt\dev\calcula-juros\NicolasPlaisant.CalculaJuros.Domain.Core\obj\Release\netcoreapp3.1\NicolasPlaisant.CalculaJuros.Domain.Core.csproj.CopyComplete
+C:\Users\nsbt\dev\calcula-juros\NicolasPlaisant.CalculaJuros.Domain.Core\obj\Release\netcoreapp3.1\NicolasPlaisant.CalculaJuros.Domain.Core.dll
+C:\Users\nsbt\dev\calcula-juros\NicolasPlaisant.CalculaJuros.Domain.Core\obj\Release\netcoreapp3.1\NicolasPlaisant.CalculaJuros.Domain.Core.pdb

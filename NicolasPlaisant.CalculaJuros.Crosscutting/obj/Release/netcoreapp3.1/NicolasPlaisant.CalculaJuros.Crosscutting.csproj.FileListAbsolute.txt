@@ -1,0 +1,14 @@
+C:\Users\nsbt\dev\calcula-juros\NicolasPlaisant.CalculaJuros.Crosscutting\bin\Release\netcoreapp3.1\NicolasPlaisant.CalculaJuros.Crosscutting.deps.json
+C:\Users\nsbt\dev\calcula-juros\NicolasPlaisant.CalculaJuros.Crosscutting\bin\Release\netcoreapp3.1\NicolasPlaisant.CalculaJuros.Crosscutting.dll
+C:\Users\nsbt\dev\calcula-juros\NicolasPlaisant.CalculaJuros.Crosscutting\bin\Release\netcoreapp3.1\NicolasPlaisant.CalculaJuros.Crosscutting.pdb
+C:\Users\nsbt\dev\calcula-juros\NicolasPlaisant.CalculaJuros.Crosscutting\bin\Release\netcoreapp3.1\NicolasPlaisant.CalculaJuros.Domain.Core.dll
+C:\Users\nsbt\dev\calcula-juros\NicolasPlaisant.CalculaJuros.Crosscutting\bin\Release\netcoreapp3.1\NicolasPlaisant.CalculaJuros.Shared.dll
+C:\Users\nsbt\dev\calcula-juros\NicolasPlaisant.CalculaJuros.Crosscutting\bin\Release\netcoreapp3.1\NicolasPlaisant.CalculaJuros.Domain.Core.pdb
+C:\Users\nsbt\dev\calcula-juros\NicolasPlaisant.CalculaJuros.Crosscutting\bin\Release\netcoreapp3.1\NicolasPlaisant.CalculaJuros.Shared.pdb
+C:\Users\nsbt\dev\calcula-juros\NicolasPlaisant.CalculaJuros.Crosscutting\obj\Release\netcoreapp3.1\NicolasPlaisant.CalculaJuros.Crosscutting.csprojAssemblyReference.cache
+C:\Users\nsbt\dev\calcula-juros\NicolasPlaisant.CalculaJuros.Crosscutting\obj\Release\netcoreapp3.1\NicolasPlaisant.CalculaJuros.Crosscutting.AssemblyInfoInputs.cache
+C:\Users\nsbt\dev\calcula-juros\NicolasPlaisant.CalculaJuros.Crosscutting\obj\Release\netcoreapp3.1\NicolasPlaisant.CalculaJuros.Crosscutting.AssemblyInfo.cs
+C:\Users\nsbt\dev\calcula-juros\NicolasPlaisant.CalculaJuros.Crosscutting\obj\Release\netcoreapp3.1\NicolasPlaisant.CalculaJuros.Crosscutting.csproj.CoreCompileInputs.cache
+C:\Users\nsbt\dev\calcula-juros\NicolasPlaisant.CalculaJuros.Crosscutting\obj\Release\netcoreapp3.1\NicolasPlaisant.CalculaJuros.Crosscutting.csproj.CopyComplete
+C:\Users\nsbt\dev\calcula-juros\NicolasPlaisant.CalculaJuros.Crosscutting\obj\Release\netcoreapp3.1\NicolasPlaisant.CalculaJuros.Crosscutting.dll
+C:\Users\nsbt\dev\calcula-juros\NicolasPlaisant.CalculaJuros.Crosscutting\obj\Release\netcoreapp3.1\NicolasPlaisant.CalculaJuros.Crosscutting.pdb
